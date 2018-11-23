@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="js/bootstrap.min.js"></script>
+  <title>Halendar</title>
+</head>
+
+
+<body onload="fetchPlans()">
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand">Halendar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Monday <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tuesday.html">Tuesday</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="wednesday.html">Wednesday</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="thursday.html">Thursday</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="friday.html">Friday</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="saturday.html">Saturday</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="sunday.html">Sunday</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1 class="display-4">Halendar</h1>
+    <h3 class="lead">Halendar. Your Daily Calendar</h3>
+    <hr class="my-4">
+    <p>Organize Your Week Using Halendar</p>
+
+        </div>
+
+        <form id="myForm">
+  <div class="form-row">
+    <div class="col-4" >
+      <input id="title" type="text" class="form-control" placeholder="Title">
+    </div>
+
+  </div>
+    <div class="form-row">
+  <div class="col-2" >
+    <input id="time" type="text" class="form-control" placeholder="Time">
+  </div>
+  <div class="col-2">
+    <input id="day" type="text" class="form-control" placeholder="Day">
+  </div>
+  <div class="form-row">
+  <div class="col-12">
+    <input id="place" type="text" class="form-control" placeholder="Place">
+  </div>
+  </div>
+  </div>
+  <button class = "btn btn-primary" type = "submit">Submit</button>
+</form>
+<div class="row-marketing">
+  <div class="col-lg-4">
+    <div id="planResults"></div>
+  </div>
+</div>
+<div class="card">
+  <div class="card-header">
+    Sunday
+  </div>
+  <div class="card-body">
+    <blockquote class="blockquote mb-2">
+      <p>A year from now you may wish you had started today.” – Karen Lamb</p>
+      <footer class="blockquote-footer">&copy copyright <cite title="Source Title">Hani Janzi</cite></footer>
+    </blockquote>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
